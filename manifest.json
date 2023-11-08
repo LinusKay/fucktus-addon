@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Fucktus",
+    "description": "Replaced the word 'Outage' with the word 'Fucked' on Optus' outage page",
+    "version": "1.0",
+    "content_scripts":
+    [
+        {
+            "matches": ["*://status.sms.optus.com.au/"],
+            "all_frames": true,
+            "js": ["content_script.js"],
+            "run_at": "document_end"
+        }
+    ]
+  }
